@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+	box-sizing: border-box;  
+	font-family: Arial, Helvetica, sans-serif;
+}  
+nav{ 
+    background: linear-gradient(130deg, rgba(36, 85, 163, 1) 23%, rgba(52, 151, 219, 1) 52%, rgba(52, 142, 219, 1) 58%, rgba(52, 131, 219, 1) 65%, rgba(40, 116, 166, 1) 74%);
+} 
+
+.py-1 {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+nav {
+    display: block;
+}
+h1{
+    color: rgba(36, 85, 163, 1); 
+    text-align: center;
+    padding-top:25px ;
+} 
+
+h6{
+    text-align: center; 
+    font-size:medium; 
+    padding-left: 12%;
+    padding-right: 12%; 
+    padding-top: 20px;
+} 
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+} 
+.col{
+    display:flex;
+
+}
+.card {
+    width: 258px; 
+    height:130px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    display: flex; 
+    margin-top: 80px; 
+    left: 25%;
+    justify-content: center;
+    align-items: center;  
+    position: relative; 
+    overflow:hidden; 
+    flex-wrap: wrap;
+
+}  
+
+.button { 
+    flex-grow: 1; 
+    position: absolute;
+    width: 20%; 
+    padding: 10px;  
+    margin:5px;
+    align-self:flex-end;
+    background-color: #2a1985;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    bottom: 25px;
+    right:25px;
+}
+.student{ 
+    flex-grow: 1;
+    justify-content:start; 
+    align-self:flex-start; 
+    position: absolute;  
+    top:20px;
+    right:25px; 
+    font-size: 24px;
+    color:#0056b3;
+    font-weight: 700; 
+    display:block;
+}
+.button:hover {
+    background-color: #0056b3;
+}  
+
+.imgSize{ 
+    position:absolute;
+    top:20px;
+    left:10px;
+    object-fit: cover;
+    height:auto;
+    width:90px;
+    z-index: 1; 
+    
+}  
+
+
+#club{
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .login-container{
+        width:90%;
+    }
+} 
+@media only screen and (max-width: 600px) {
+    /* Adjust layout for smaller screens */
+    .col {
+        width:400px; /* Set flex basis to 50% minus margin */
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    .card {
+      flex-basis: calc(100% - 20px); /* Full width with some margin */
+    }
+}
+
