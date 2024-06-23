@@ -1,0 +1,92 @@
+*{
+    margin:0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box; 
+}
+
+.header img{ 
+    border:2px solid white;
+    border-radius: 50%; 
+    margin-left: 0px;
+	margin-top: 30px;
+    
+} 
+.header h1{ 
+    
+    margin-top:0px;  
+    margin-left: 150px;  
+    padding-bottom: 10px;
+    text-decoration: underline; 
+    position: absolute;
+	left:300px;
+	top:100px; 
+	display: inline-block; 
+    font-weight: 900; 
+    font-family: garamond serif; 
+    font-size: 50px; 
+    color: aliceblue;
+}  
+
+#euphoria{
+    margin-top:150px;  
+    margin-left: 200px;  
+    padding-bottom: 10px;
+    text-decoration: underline; 
+    position: absolute;
+	left:300px;
+	top:100px; 
+	display: inline-block; 
+    font-weight: 900; 
+    font-family: garamond serif; 
+    font-size: 50px; 
+    color: aliceblue;
+    text-align: center;
+} 
+
+.AboutEvent h1{ 
+    margin-top: 100px; 
+    justify-content: center;
+    align-items: center; 
+    color:#fff;
+    margin-left: 500px; 
+    margin-right: 200px; 
+    font-size: 50px; 
+    font-family: garamond serif; 
+    text-decoration: underline; 
+} 
+.AboutEvent pre{
+    color:#fff;
+    margin-left: 50px; 
+    margin-right: 200px; 
+    font-size: 30px; 
+    margin: 100px;
+    padding-bottom: 0px; 
+    margin-bottom: 40px;
+} 
+.register {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left:100px; 
+    margin-bottom: 50px;
+}
+
+/* Hover effect for the register button */
+.register:hover {
+    background-color: darkred;
+} 
+
+.footer{
+    display:inline-block;
+    margin-left: 100px; 
+    color:#fff;
+    font-size: 30px; 
+    margin-bottom: 30px;
+}
