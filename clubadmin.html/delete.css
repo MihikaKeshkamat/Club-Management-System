@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; */
+    /* filter:blur(1px); */
+}
+h1{
+    margin-top: 20px;
+}
+.container {
+    background-image: url('lightbg.PNG');
+    /* margin: 0 auto; */
+    /* padding: 20px; */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for a card-like effect */
+    background-size: cover; 
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-position: center; 
+	min-height:100vh;
+	width:100%;
+	/* filter:blur(1px); */
+	top:0;
+	left:0; 
+    /* overflow: hidden;  */
+} 
+.container::after{
+	background-color: rgba(62, 62, 164, 0.5);
+}
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;   
+    margin-top: 30px;
+    margin-left: 40px; 
+    
+} 
+button{ 
+    width:200px; 
+    height:180px;
+    margin-left: 60px;  
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.home{
+    background-color: #462749;  
+}
+.home:hover{
+    background-color: #c04fca;
+} 
+
+.create{
+    background-color: #0D1A30;  
+}
+.create:hover{
+    background-color: #3367C1;
+}
+
+.delete{
+    background-color: #27607C;
+}
+
+.delete:hover{
+    background-color: #2B888C;
+}
+
+.viewclub{
+    background-color: #73070B;
+}
+
+.viewclub:hover{
+    background-color: #ac181d;
+}
+.viewreg{
+    background-color: #8A5665;
+}
+
+.viewreg:hover{
+    background-color: #d16a87;
+}
+.report{
+    background-color: #004FA3;
+}
+
+.report:hover{
+    background-color: #4396ee;
+}
+
+#dropdown{
+    height:90px; 
+    width:250px; 
+    margin-bottom: 0px; 
+    margin-left: 100px; 
+    border-radius: 20px; 
+    background-color: #32866D; 
+    border:white;
+} 
+
+#dropdown:hover{
+    background-color: #3bd0a3;
+}

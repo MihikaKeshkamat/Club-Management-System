@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTOP Login</title> 
+    <link href="vtoplogin.css" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/3a78f7681f.js" crossorigin="anonymous"></script>
+    
+</head>
+<script>
+    //function to redirect to student login page 
+    function redirectToLoginPage(){
+        window.location.href="login.html";
+    } 
+    //function to redirect to club login page 
+    function redirectToClubLoginPage(){
+        window.location.href="clublogin.html";
+    }
+</script>
+<body>
+    <div class="login-container">
+        <nav class="navbar navbar-expand-lg bg-light headerBackgroundColor py-1 fixed-top shadow">
+            <img src="vit transparent logo.PNG" height="60px">
+        </nav> 
+        <h1>VTOP Translates to "VIT on TOP"</h1> 
+        <h6>A digital initiative by the institute facilitating Faculty, Staff, Students, Parents and Alumni to access and process Academics, Research, Supporting Services at one common platform</h6> 
+        <div class="col">
+            <div class="card card-body cardStudent  shadow">
+                
+                        <div class="d-flex jusitfy-content-start align-items-stretch">
+                            <div class="w-50">
+                                <img src="student grad icon.PNG" class="imgSize">
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class=" student h6">Student</div>
+                            
+                                <button type="submit" class="button btn-primary fw-bold" onclick="redirectToLoginPage()"><i
+                                        class="fa fa-sign-in fa-3"></i></button>
+                            </div>
+                        </div>
+            </div>
+        
+
+        
+            <div class="card card-body cardStudent shadow" id="club">
+                
+                        <div class="d-flex jusitfy-content-start align-items-stretch">
+                            <div class="w-50">
+                                <img src="club image.PNG" class="imgSize">
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class=" student h6" style="right:40px" >Club</div>
+                            
+                                <button type="submit" class="button btn-primary fw-bold" onclick="redirectToClubLoginPage()" style="right:40px"><i
+                                        class="fa fa-sign-in fa-3"></i></button>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div> 
+
+</body>
+</html>

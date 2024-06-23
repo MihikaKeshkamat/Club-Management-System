@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="login.css" rel="stylesheet"> 
+    <title>SignUp Page</title> 
+    <script src="https://kit.fontawesome.com/3a78f7681f.js" crossorigin="anonymous"></script>
+    <script>
+    function validatePassword() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+    
+        if (password != confirmPassword) {
+            alert("Passwords do not match");
+            return false;
+        }
+        return true;
+    }
+    </script>
+    
+</head> 
+<body>
+        <div class="login-container">
+            <div class="form-box">
+                <h1 id="title">Sign Up</h1>
+                <form method="post" action="{% url 'next' %}" onsubmit="return validatePassword()">
+                    {% csrf_token %}
+                    <div class="input-group"> 
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i> 
+                            <input type="text" placeholder="Registration Number" name='regNum'>
+                        </div> 
+    
+                        <div class="input-field" id="email">
+                            <i class="fa-solid fa-envelope" ></i> 
+                            <input type="email" placeholder="Email" name='email'>
+                        </div> 
+    
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i> 
+                            <input type="password" placeholder="Password" name='password'>
+                        </div> 
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i> 
+                            <input type="confirmPassword" placeholder="confirmPassword" name='Confirm Password'>
+                        </div> 
+                        <p>Forget Password <a href="#">Click Here!</a></p>
+                    </div> 
+                    <div class="btn-field">
+                        <button type="submit" id="signupBtn" >Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body> 
+</html>
